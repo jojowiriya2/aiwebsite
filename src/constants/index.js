@@ -94,6 +94,9 @@ export const integration = [
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
+    x: 0,
+    x1: -150,
+    duration: 0.4,
   },
   {
     id: "1",
@@ -102,6 +105,9 @@ export const integration = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
+    x: 0,
+    x1: 150,
+    duration: 1,
   },
   {
     id: "2",
@@ -110,6 +116,9 @@ export const integration = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
+    x: 0,
+    x1: -150,
+    duration: 1.5,
   },
 ];
 
