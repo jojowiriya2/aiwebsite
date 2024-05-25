@@ -5,8 +5,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import EarlyAccess from "./components/EarlyAccess";
-import Connection from "./components/Integration";
-import Integration from "./components/Connection";
+import Integration from "./components/Integration";
+import Connection from "./components/Connection";
+import Test from "./components/Test";
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
         <Hero />
         <Interaction />
         <Marketplace />
-        <Integration />
         <Connection />
+        {/* <Integration /> */}
+        <Test />
         <EarlyAccess />
         <Footer />
       </div>

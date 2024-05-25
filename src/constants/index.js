@@ -93,7 +93,7 @@ export const integration = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
-    colorful: true,
+
     x: 0,
     x1: -150,
     duration: 0.4,
@@ -119,6 +119,17 @@ export const integration = [
     x: 0,
     x1: -150,
     duration: 1.5,
+  },
+  {
+    id: "3",
+    title: "Window App",
+    text: "We understand that users might prefer interacting with their AI Companion on their favorite social media platforms. This integration ensures quick and easy access, allowing your AI to be part of your daily interactions without needing to enter our platform. Whether you’re sharing moments on Facebook, tweeting on Twitter, or posting on Instagram, your AI Companion will be right there with you.",
+    date: "May 2023",
+    status: "done",
+    imageUrl: roadmap3,
+    x: 0,
+    x1: 150,
+    duration: 2,
   },
 ];
 

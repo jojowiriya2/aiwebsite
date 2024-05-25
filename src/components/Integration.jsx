@@ -7,6 +7,7 @@ import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import minecraft from "../assets/minecraft.svg";
 
 const Integration = () => {
   const ref = useRef(null);
@@ -18,12 +19,14 @@ const Integration = () => {
         <div className="flex-col flex md:flex-row justify-center items-center max-w-full md:h-[100px] h-[200px] pb-10 pt-20">
           <div className="flex w-full m-1 justify-center items-center">
             <motion.div
-              className="w-[100px] h-[100px]  m-2 border bg-red-600"
+              className="w-[100px] h-[100px]  m-2"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: isInView ? "-50%" : "100%", opacity: 1 }}
               viewport={{ margin: "-600" }}
               transition={{ duration: 0.4 }}
-            />
+            >
+              <img className="w-full" src={minecraft} alt="minecraft" />
+            </motion.div>
             <motion.div
               className="w-[100px] h-[100px] m-2 border bg-red-600"
               initial={{ y: -100, opacity: 0 }}
