@@ -36,7 +36,7 @@ const StickyImage = ({ video }) => {
     offset: ["end end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [-0.4, 1], [1, 0.85]);
+  const scale = useTransform(scrollYProgress, [-0.9, 1], [1, 0.85]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   return (
     <motion.div
@@ -55,7 +55,7 @@ const StickyImage = ({ video }) => {
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
       <motion.div
-        className="absolute inset-0 bg-neutral-950/70"
+        className="absolute border border-indigo-950 rounded-3xl inset-0 bg-neutral-950/70"
         style={{
           opacity,
         }}
@@ -115,7 +115,7 @@ const ExampleContent = () => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
               viewport={{ margin: "-600" }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.7 }}
             >
               <img className="w-full" src={minecraft} alt="minecraft" />
             </motion.div>
@@ -123,14 +123,14 @@ const ExampleContent = () => {
               className="w-[100px] h-[100px] m-2 border bg-red-600"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
-              transition={{ duration: 0.55 }}
+              transition={{ duration: 0.85 }}
             />
             <motion.div
               className="w-[100px] h-[100px] m-2 border bg-red-600"
               initial={{ y: -100, opacity: 0 }}
               viewport={{ margin: "-600" }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.9 }}
             />
           </div>
         </div>
@@ -166,7 +166,7 @@ const ExampleContent1 = () => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
               viewport={{ margin: "-600" }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.7 }}
             >
               <img className="w-full" src={minecraft} alt="minecraft" />
             </motion.div>
@@ -174,14 +174,14 @@ const ExampleContent1 = () => {
               className="w-[100px] h-[100px] m-2 border bg-red-600"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
-              transition={{ duration: 0.55 }}
+              transition={{ duration: 0.85 }}
             />
             <motion.div
               className="w-[100px] h-[100px] m-2 border bg-red-600"
               initial={{ y: -100, opacity: 0 }}
               viewport={{ margin: "-600" }}
               animate={{ y: isInView ? "10%" : "100%", opacity: 1 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.9 }}
             />
           </div>
         </div>
@@ -200,7 +200,10 @@ const TextParallaxContent = ({ video, subheading, heading, children }) => {
           paddingTop: vid_paddinf,
         }}
       >
-        <div className=" relative w-full justify-center items-center">
+        <div
+          id="Integration"
+          className=" relative w-full justify-center items-center"
+        >
           <StickyImage video={video}></StickyImage>
           <OverlayCopy heading={heading} subheading={subheading} />
         </div>
