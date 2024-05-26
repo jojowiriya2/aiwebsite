@@ -35,6 +35,8 @@ import {
   twitter,
   yourlogo,
 } from "../assets";
+import minecraft from "../assets/minecraft.mp4";
+import discord1 from "../assets/Discord.mp4";
 
 export const navigation = [
   {
@@ -93,7 +95,9 @@ export const integration = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
-
+    video: minecraft,
+    y: 200,
+    y1: 50,
     x: 0,
     x1: -150,
     duration: 0.4,
@@ -105,8 +109,11 @@ export const integration = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
+    video: minecraft,
+    y: 50,
+    y1: 200,
     x: 0,
-    x1: 150,
+    x1: 200,
     duration: 1,
   },
   {
@@ -116,9 +123,12 @@ export const integration = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
+    video: discord1,
+    y: 200,
+    y1: 50,
     x: 0,
     x1: -150,
-    duration: 1.5,
+    duration: 2,
   },
   {
     id: "3",
@@ -127,9 +137,12 @@ export const integration = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
+    video: discord1,
+    y: 50,
+    y1: 200,
     x: 0,
     x1: 150,
-    duration: 2,
+    duration: 4,
   },
 ];
 

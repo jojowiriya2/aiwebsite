@@ -8,6 +8,7 @@ import EarlyAccess from "./components/EarlyAccess";
 import Integration from "./components/Integration";
 import Connection from "./components/Connection";
 import Test from "./components/Test";
+import Test2 from "./components/test2";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Marketplace />
         <Connection />
         {/* <Integration /> */}
-        <Test />
+        {/* <Test /> */}
+        <Test2 />
         <EarlyAccess />
         <Footer />
       </div>
