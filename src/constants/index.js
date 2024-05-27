@@ -128,7 +128,7 @@ export const integration = [
     y1: 50,
     x: 0,
     x1: -150,
-    duration: 2,
+    duration: 1.5,
   },
   {
     id: "3",
@@ -142,7 +142,7 @@ export const integration = [
     y1: 200,
     x: 0,
     x1: 150,
-    duration: 4,
+    duration: 2,
   },
 ];
 

@@ -9,6 +9,7 @@ import Integration from "./components/Integration";
 import Connection from "./components/Connection";
 import Test from "./components/Test";
 import Test2 from "./components/test2";
+import Test3 from "./components/Test3";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
-        <Interaction />
+        <Test3 />
+        {/* <Interaction /> */}
         <Marketplace />
         <Connection />
         {/* <Integration /> */}
